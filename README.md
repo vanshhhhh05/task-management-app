@@ -20,16 +20,19 @@ Overview:
 
 Features:
 
-  Add a Task: Create new tasks with a title, description, and priority level.
-  Edit a Task: Modify existing tasks.
-  Delete a Task: Remove tasks from the list.
-  Toggle Completion: Mark tasks as completed or pending.
-  Dynamic Sorting: Tasks are sorted by priority (high, medium, low) and completed tasks are displayed at the bottom.
-  Responsive Design: Basic styling for a clean and user-friendly interface.
-  Technology Stack
+  1. Add a Task: Create new tasks with a title, description, and priority level.
+  2. Edit a Task: Modify existing tasks.
+  3. Delete a Task: Remove tasks from the list.
+  4. Toggle Completion: Mark tasks as completed or pending.
+  5. Dynamic Sorting: Tasks are sorted by priority (high, medium, low) and completed tasks are displayed at the bottom.
+  6. Responsive Design: Basic styling for a clean and user-friendly interface.
+
+Technology Stack:
+
   Next.js: Framework for server-rendered React applications.
   React.js: Library for building user interfaces.
   CSS: Styling for the application.
+  Tailwind: For basic css.
 
 Setup Instructions:
 
@@ -62,5 +65,5 @@ Setup Instructions:
         High: 1
         Medium: 2
         Low: 3
-        
+
       Completed tasks are always moved to the bottom of the list, ensuring that they do not interfere with the visibility of pending tasks.

@@ -1,4 +1,3 @@
-// components/TaskForm.js
 
 import { useEffect, useState } from 'react';
 
@@ -15,7 +14,7 @@ export default function TaskForm({ addTask, taskToBeEdit, handleEditTask, handle
     if (taskToBeEdit) {
       setTask(taskToBeEdit);
     } else {
-      setTask(initialValues); // Reset form if no task is being edited
+      setTask(initialValues);
     }
   }, [taskToBeEdit]);
 
