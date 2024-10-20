@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,27 +12,55 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Task Management App
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Overview: 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  ark tasks as completed, with a focus on sorting tasks by priority. The app utilizes Server-Side Rendering (SSR) to load the initial list of tasks.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Features:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  Add a Task: Create new tasks with a title, description, and priority level.
+  Edit a Task: Modify existing tasks.
+  Delete a Task: Remove tasks from the list.
+  Toggle Completion: Mark tasks as completed or pending.
+  Dynamic Sorting: Tasks are sorted by priority (high, medium, low) and completed tasks are displayed at the bottom.
+  Responsive Design: Basic styling for a clean and user-friendly interface.
+  Technology Stack
+  Next.js: Framework for server-rendered React applications.
+  React.js: Library for building user interfaces.
+  CSS: Styling for the application.
 
-## Learn More
+Setup Instructions:
 
-To learn more about Next.js, take a look at the following resources:
+  1. Clone the Repository
+    git clone <repository_url>
+    cd task-management-app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  2. Install Dependencies Ensure you have Node.js installed. Then, install the required dependencies:
+    npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  3. Run the Development Server Start the Next.js development server:
+    npm run dev
 
-## Deploy on Vercel
+  4. Open your browser and navigate to http://localhost:3000.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  Sorting Tasks by Priority
+
+    The app implements a sorting mechanism that organizes tasks based on their priority levels: high, medium, and low. The sorting approach involves the following steps:
+
+    1. Priority Levels: Each task has a priority assigned:
+
+      1.1 High priority (highest urgency): Color-coded red.
+      1.2 Medium priority: Color-coded yellow.
+      1,3 Low priority (lowest urgency): Color-coded green.
+
+    2. Sorting Logic:
+
+      The app utilizes a custom sort function that assigns numeric values to each priority level:
+        High: 1
+        Medium: 2
+        Low: 3
+        
+      Completed tasks are always moved to the bottom of the list, ensuring that they do not interfere with the visibility of pending tasks.
