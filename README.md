@@ -37,7 +37,7 @@ Technology Stack:
 Setup Instructions:
 
   1. Clone the Repository
-    git clone <repository_url>
+    git clone https://github.com/vanshhhhh05/task-management-app.git
     cd task-management-app
 
   2. Install Dependencies Ensure you have Node.js installed. Then, install the required dependencies:
